@@ -1,5 +1,7 @@
 # keepalived for CentOS6 RPM builder
 
+[![Build Status](https://travis-ci.org/yoramvandevelde/docker-keepalived-centos6-rpm-builder.svg?branch=master)](https://travis-ci.org/yoramvandevelde/docker-keepalived-centos6-rpm-builder)
+
 Build it:
 ```
 docker build -t keepalived-centos6-rpm-builder .
