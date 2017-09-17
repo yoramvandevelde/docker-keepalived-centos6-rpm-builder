@@ -6,6 +6,5 @@ services:
     - docker
 install:
     - docker build -t docker-keepalived-centos6-rpm-builder .
-    - docker run -ti --rm -v $PWD/data:/data -v $PWD/assets/config:/config keepalived-centos6-rpm-builder:latest start.sh
 script:
-    - ls data/*.rpm
+    - docker run -ti --rm -v $PWD/data:/data -v $PWD/assets/config:/config keepalived-centos6-rpm-builder start.sh
