@@ -2,7 +2,7 @@
 
 Build it:
 ```
-docker build -t .
+docker build -t keepalived-centos6-rpm-builder .
 ```
 
 Run it:
