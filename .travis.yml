@@ -5,6 +5,6 @@ python:
 services:
     - docker
 install:
-    - docker build -t docker-keepalived-centos6-rpm-builder .
+    - docker build -t keepalived-centos6-rpm-builder .
 script:
     - docker run -ti --rm -v $PWD/data:/data -v $PWD/assets/config:/config keepalived-centos6-rpm-builder start.sh
