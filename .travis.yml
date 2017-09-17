@@ -1,11 +1,12 @@
 ---
 language: python
 python:
-    - 2.7
+    - 2.6
 services:
     - docker
 install:
     - docker build -t docker-keepalived-centos6-rpm-builder .
     - docker run -d --name docker-keepalived-centos6-rpm-builder docker-keepalived-centos6-rpm-builder:latest
 script:
-    - ls data/
+    - ls data/*.rpm
+
