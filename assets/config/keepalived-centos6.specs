@@ -33,7 +33,7 @@ make %{?_smp_mflags}
 
 %files
 %defattr(-,root,root)
-/etc/rc.d/init.d/keepalived
+%attr(0755, root, root) /etc/rc.d/init.d/keepalived
 /etc/sysconfig/keepalived
 /etc/keepalived/keepalived.conf
 /etc/keepalived/samples/client.pem
